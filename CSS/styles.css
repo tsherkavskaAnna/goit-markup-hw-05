@@ -338,6 +338,13 @@ link:focus {
 .social-icons-item:not(:last-child) {
   margin-right: 10px;
 }
+
+.social-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 .social-icons-link {
   display: flex;
   align-items: center;
@@ -345,16 +352,11 @@ link:focus {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--title-color);
   color: var(--icons-color);
-  transition: background-color var(--time-duration) var(--timing-function);
-  transition: color var(--time-duration) var(--timing-function);
+  transition: background-color var(--time-duration) var(--timing-function),
+    color var(--time-duration) var(--timing-function);
 }
-.social-icons-svg {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
+
 .social-icons-link:hover,
 .social-icons-link:focus {
   background-color: var(--accent-color);
@@ -378,8 +380,8 @@ link:focus {
   border: 1px solid var(--icons-color);
   box-sizing: border-box;
   border-radius: 4px;
-  transition: border-color var(--time-duration) var(--timing-function);
-  transition: fill var(--time-duration) var(--timing-function);
+  transition: border-color var(--time-duration) var(--timing-function),
+    fill var(--time-duration) var(--timing-function);
 }
 .clients-link {
   fill: var(--icons-color);
